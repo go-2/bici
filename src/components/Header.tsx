@@ -65,7 +65,7 @@ function Header({ title }: IProps) {
             切换 {darkMode ? "浅色" : "深色"} 模式
           </span>
         </DropdownItem>
-        <DropdownItem>
+        {/* <DropdownItem>
           <label className="flex-1 flex items-center cursor-pointer">
             <Upload size={20} />
             <span className="ml-2">导入 JSON</span>
@@ -91,7 +91,7 @@ function Header({ title }: IProps) {
             <Download size={20} />
             <span className="ml-2">导出 JSON</span>
           </a>
-        </DropdownItem>
+        </DropdownItem> */}
       </Dropdown>
 
       {showImportConfirmModal && (

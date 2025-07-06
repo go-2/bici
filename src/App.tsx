@@ -88,7 +88,7 @@ function App() {
           )}
         </Board>
       </DragDropContext>
-      <Footer />
+      {/* <Footer />   */}
     </div>
   )
 }
