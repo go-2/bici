@@ -115,19 +115,19 @@ function ProjectSelector({ className }: IProps) {
       {projectToDelete && (
         <Modal
           danger
-          title="Please Confirm Project Deletion"
-          body={`You are about to delete "${projectToDelete.name}"`}
+          title="请确认删除项目"
+          body={`即将删除 "${projectToDelete.name}"`}
         >
           <Button onClick={handleDelete} className="!bg-red-500">
             <Trash2 className="mr-2 w-5 h-5" />
-            <span>Confirm Deletion</span>
+            <span>确定删除</span>
           </Button>
           <Button
             onClick={() => setProjectToDelete(null)}
             className="!bg-gray-600/50"
           >
             <X className="mr-2 w-5 h-5" />
-            <span>Cancel</span>
+            <span>取消</span>
           </Button>
         </Modal>
       )}
